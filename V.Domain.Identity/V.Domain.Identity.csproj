@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="Entities\Abstraction\" />
+    <None Remove="Entities\.DS_Store" />
+    <None Remove=".DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Abstraction\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\V.Domain.Base\V.Domain.Base.csproj" />
+  </ItemGroup>
+</Project>
