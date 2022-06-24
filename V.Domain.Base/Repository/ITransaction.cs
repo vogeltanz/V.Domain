@@ -4,8 +4,10 @@ using System.Text;
 
 namespace V.Domain.Base.Repository
 {
-    public interface IUnitOfWork
+    public interface ITransaction
     {
-        void SaveChanges();
+        void CreateTransaction();
+        void Commit();
+        void Rollback();
     }
 }

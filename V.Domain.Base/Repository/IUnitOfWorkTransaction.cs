@@ -4,8 +4,7 @@ using System.Text;
 
 namespace V.Domain.Base.Repository
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWorkTransaction : IUnitOfWork, ITransaction
     {
-        void SaveChanges();
     }
 }
