@@ -16,4 +16,14 @@ namespace V.Domain.Base.Repository
         void Delete(T entity);
     }
 
+    public interface IRepository
+    {
+        object GetById(object id);
+        IEnumerable<object> GetAll();
+        IEnumerable<object> GetAll(Expression<Func<object, bool>> predicate);
+        void Add(object entity);
+        void Edit(object entity);
+        void Delete(object entity);
+    }
+
 }
